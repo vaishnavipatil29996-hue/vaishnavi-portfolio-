@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VaishCreates — Data Entry & Design</title>
+  <meta name="description" content="VaishCreates - Data Entry, Excel, PDF to Word, Canva designs. Vaishnavi Patil - Freelancer (MCA student)." />
+  <style>
+    :root{
+      --bg:#FAF8F5; --accent:#E7D7C9; --dark:#2F2F2F; --muted:#7A7A7A;
+      --primary:#D4AF37;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",sans-serif;margin:0;background:var(--bg);color:var(--dark);line-height:1.45}
+    header{padding:36px 20px;text-align:center;background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent)}
+    .wrap{max-width:900px;margin:0 auto;padding:30px}
+    h1{margin:.2rem 0;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{background:white;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(18,18,18,0.04)}
+    .btn{display:inline-block;padding:10px 16px;background:var(--dark);color:white;border-radius:8px;text-decoration:none;margin-top:12px}
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:14px}
+    .contact{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;margin-top:16px}
+    .chip{background:var(--accent);padding:8px 12px;border-radius:999px;color:var(--dark);font-weight:600}
+    @media(min-width:720px){h1{font-size:34px}}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .profile-pic{width:120px;height:120px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#F8EDE4);display:inline-block}
+    .tag{color:var(--primary);font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div style="display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap">
+        <div class="profile-pic" aria-hidden="true"></div>
+        <div style="text-align:center">
+          <h1>VaishCreates — Data Entry & Creative Design</h1>
+          <p class="lead">Hi, I’m <strong>Vaishnavi</strong> — an MCA student and freelance Data Entry specialist. I help small businesses with accurate data entry, clean Excel sheets, and aesthetic Canva designs.</p>
+          <div class="contact">
+            <span class="chip">Email: vaishcreates@example.com</span>
+            <span class="chip">Instagram: @vaishcreates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2 style="margin-top:6px">My Services</h2>
+      <p class="lead">I deliver reliable, fast, and accurate work — data entry, PDF/Word conversion, Excel formatting, and Canva social media designs.</p>
+
+      <div class="services">
+        <div class="card">
+          <h3>Data Entry</h3>
+          <p>Excel / Google Sheets data entry, copy-paste tasks, data collection, and data cleaning.</p>
+        </div>
+        <div class="card">
+          <h3>PDF → Word / Word → PDF</h3>
+          <p>Manual conversion, proper formatting, clean and editable documents.</p>
+        </div>
+        <div class="card">
+          <h3>Excel Formatting</h3>
+          <p>Tables, sorting, filters, neat presentation, and basic formulas.</p>
+        </div>
+        <div class="card">
+          <h3>Canva Designs</h3>
+          <p>Instagram posts, quote templates, gig thumbnails, and resume layouts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:26px">
+      <h2>Portfolio / Samples</h2>
+      <p class="lead">Available on request. Sample files I provide: sample Excel sheet (dummy data), PDF↔Word conversion sample, table formatting example, and Canva cover images.</p>
+
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h4>Sample Excel</h4>
+          <p>Clean and well-organized columns with dummy data. Provided as .xlsx.</p>
+        </div>
+        <div class="card">
+          <h4>PDF → Word</h4>
+          <p>PDF or scanned documents converted manually into clean, editable Word files.</p>
+        </div>
+      </div>
+
+      <a class="btn" href="#contact">Get a Quote</a>
+    </section>
+
+    <section style="margin-top:28px">
+      <h2>About Me</h2>
+      <p>I’m an MCA student from India, focused on accuracy and fast delivery. I started freelancing to help individuals and small businesses manage their data efficiently.</p>
+      <p class="lead" style="margin-top:8px"><strong>Languages:</strong> English (Intermediate), Marathi (Native)</p>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <h2>Contact</h2>
+      <p class="lead">Ready to start? Send a message via email or Instagram. I reply quickly and can share sample files before starting the project.</p>
+      <div style="text-align:center;margin-top:12px">
+        <a class="btn" href="mailto:vaishcreates@example.com">Email Me</a>
+        <a class="btn" style="background:var(--dark);margin-left:8px" href="https://www.instagram.com/vaishcreates" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> VaishCreates — Data Entry & Design • All rights reserved.
+  </footer>
+
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
